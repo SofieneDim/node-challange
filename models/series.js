@@ -26,7 +26,7 @@ var SerierSchema = new mongoose.Schema({
         default: false,
     },
     image: {
-        type: Number,
+        type: String,
         default: false,
     }
 });
