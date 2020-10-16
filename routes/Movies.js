@@ -9,7 +9,7 @@ router.get("/:pageNumber", async (req, res) => {
     try {
         const movies = await Movie.find();
         const responce = paginate(movies, numberOfItems, req.params.pageNumber)
-        res.status(200).send(responce);
+        res.status(200).send({ content: responce, itemsNumber: movies.length });
     } catch (error) {
         res.json({ message: error });
     }

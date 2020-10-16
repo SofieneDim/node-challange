@@ -8,7 +8,7 @@ router.get("/:pageNumber", async (req, res) => {
     try {
         const series = await Series.find();
         const responce = paginate(series, numberOfItems, req.params.pageNumber)
-        res.status(200).send(responce)
+        res.status(200).send({ content: responce, itemsNumber: series.length })
     } catch (error) {
         res.json({ message: error });
     }

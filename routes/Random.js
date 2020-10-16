@@ -10,8 +10,9 @@ router.get("/:pageNumber", async (req, res) => {
     try {
         const series = await Series.find();
         const movies = await Movies.find();
-        const responce = paginate(series.concat(movies), numberOfItems, req.params.pageNumber)
-        res.status(200).send(responce)
+        const random = series.concat(movies)
+        const responce = paginate(random, numberOfItems, req.params.pageNumber)
+        res.status(200).send({ content: responce, itemsNumber: random.length })
     } catch (error) {
         res.json({ message: error });
     }
