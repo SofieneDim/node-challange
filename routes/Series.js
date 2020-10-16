@@ -5,7 +5,7 @@ Series = require('../models/series');
 router.get("/", async (req, res) => {
     try {
         const series = await Series.find();
-        res.status(200).send(series)
+        res.status(200).send({length: series.length})
     } catch (error) {
         res.json({ message: error });
     }
