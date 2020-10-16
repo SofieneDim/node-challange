@@ -28,6 +28,20 @@ router.post("/", async(req, res) => {
     };
 });
 
+router.get("/search", async (req, res) => {
+    const {title, date} = req.query; 
+    if(!title) return res.status(201).send();
+    try { 
+        let result = await Series.find({title});
+        if (!date) return res.status(200).send(result);
+        else if(result.length && result[0].released == date)
+            return res.status(200).send(result);
+            else return res.status(200).send([]);
+    } catch (error) {
+        res.json({ message: error });
+    };
+});
+
 
 
 module.exports = router;

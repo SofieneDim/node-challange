@@ -14,6 +14,23 @@ router.get("/", async (req, res) => {
     }
 });
 
+router.post("/", async(req, res) => {
+    const newMovie = new Series({
+        title: req.body.title,
+        image: req.body.image,
+        writer: req.body.writer,
+        rating: req.body.rating,
+        released: req.body.released,
+        description: req.body.description,
+    });
+    try {
+        await newMovie.save();
+        res.status(200).send("New movie successfully registered!");
+    } catch (error) {
+        res.json({ message: error });
+    };
+});
+
 router.get("/search", async (req, res) => {
     const {title, date} = req.query;
     let seriesResult = [];
@@ -33,23 +50,6 @@ router.get("/search", async (req, res) => {
                 result.push(moviesResult[0]); 
             return res.status(200).send(result);
         };
-    } catch (error) {
-        res.json({ message: error });
-    }
-});
-
-router.post("/", async(req, res) => {
-    const newMovie = new Series({
-        title: req.body.title,
-        image: req.body.image,
-        writer: req.body.writer,
-        rating: req.body.rating,
-        released: req.body.released,
-        description: req.body.description,
-    });
-    try {
-        await newMovie.save();
-        res.status(200).send("New movie successfully registered!");
     } catch (error) {
         res.json({ message: error });
     };
