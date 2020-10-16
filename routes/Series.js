@@ -1,11 +1,14 @@
 const express = require("express");
 router = express.Router();
 Series = require('../models/series');
+paginate = require("./common/helpers");
+numberOfItems = require("./common/constants");
 
-router.get("/", async (req, res) => {
+router.get("/:pageNumber", async (req, res) => {
     try {
         const series = await Series.find();
-        res.status(200).send(series)
+        const responce = paginate(series, numberOfItems, req.params.pageNumber)
+        res.status(200).send(responce)
     } catch (error) {
         res.json({ message: error });
     }

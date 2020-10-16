@@ -2,15 +2,16 @@ const express = require("express");
 router = express.Router();
 Series = require('../models/series');
 Movies = require('../models/movies');
+paginate = require("./common/helpers");
+numberOfItems = require("./common/constants");
 
 
-router.get("/", async (req, res) => {
-    console.log('req:')
+router.get("/:pageNumber", async (req, res) => {
     try {
         const series = await Series.find();
-        console.log('Series:', Series)
         const movies = await Movies.find();
-        res.status(200).send(series.concat(movies))
+        const responce = paginate(series.concat(movies), numberOfItems, req.params.pageNumber)
+        res.status(200).send(responce)
     } catch (error) {
         res.json({ message: error });
     }
