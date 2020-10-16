@@ -1,18 +1,22 @@
 const express = require("express");
 router = express.Router();
 Movie = require('../models/movies');
+paginate = require("./common/helpers")
+numberOfItems = require("./common/constants")
 
 
-router.get("/", async (req, res) => {
+router.get("/:pageNumber", async (req, res) => {
     try {
         const movies = await Movie.find();
-        res.status(200).send(movies)
+        const responce = paginate(movies, numberOfItems, req.params.pageNumber)
+        for (let item of responce) console.log('responce:', item.id)
+        res.status(200).send(responce);
     } catch (error) {
         res.json({ message: error });
     }
 });
 
-router.post("/", async(req, res) => {
+router.post("/", async (req, res) => {
     const newMovie = new Movie({
         title: req.body.title,
         image: req.body.image,
@@ -30,14 +34,14 @@ router.post("/", async(req, res) => {
 });
 
 router.get("/search", async (req, res) => {
-    const {title, date} = req.query; 
-    if(!title) return res.status(201).send();
-    try { 
-        let result = await Movies.find({title});
+    const { title, date } = req.query;
+    if (!title) return res.status(201).send();
+    try {
+        let result = await Movies.find({ title });
         if (!date) return res.status(200).send(result);
-        else if(result.length && result[0].released == date)
+        else if (result.length && result[0].released == date)
             return res.status(200).send(result);
-            else return res.status(200).send([]);
+        else return res.status(200).send([]);
     } catch (error) {
         res.json({ message: error });
     };
