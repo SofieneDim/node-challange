@@ -6,6 +6,30 @@ paginate = require("./common/helpers");
 numberOfItems = require("./common/constants");
 
 
+router.get("/search", async (req, res) => {
+    const { title, date } = req.query;
+    let seriesResult = [];
+    let moviesResult = [];
+    let result = [];
+    if (!title) return res.status(201).send();
+    try {
+        seriesResult = await Series.find({ title });
+        moviesResult = await Movies.find({ title });
+        if (!date) {
+            result = seriesResult.concat(moviesResult);
+            return res.status(200).send(result);
+        } else {
+            if (seriesResult.length && seriesResult[0].released == date)
+                result.push(seriesResult[0]);
+            if (moviesResult.length && moviesResult[0].released == date)
+                result.push(moviesResult[0]);
+            return res.status(200).send(result);
+        };
+    } catch (error) {
+        res.json({ message: error });
+    };
+});
+
 router.get("/:pageNumber", async (req, res) => {
     try {
         const series = await Series.find();
@@ -30,30 +54,6 @@ router.post("/", async (req, res) => {
     try {
         await newMovie.save();
         res.status(200).send("New movie successfully registered!");
-    } catch (error) {
-        res.json({ message: error });
-    };
-});
-
-router.get("/search", async (req, res) => {
-    const { title, date } = req.query;
-    let seriesResult = [];
-    let moviesResult = [];
-    let result = [];
-    if (!title) return res.status(201).send();
-    try {
-        seriesResult = await Series.find({ title });
-        moviesResult = await Movies.find({ title });
-        if (!date) {
-            result = seriesResult.concat(moviesResult);
-            return res.status(200).send(result);
-        } else {
-            if (seriesResult.length && seriesResult[0].released == date)
-                result.push(seriesResult[0]);
-            if (moviesResult.length && moviesResult[0].released == date)
-                result.push(moviesResult[0]);
-            return res.status(200).send(result);
-        };
     } catch (error) {
         res.json({ message: error });
     };
