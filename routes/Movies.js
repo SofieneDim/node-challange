@@ -5,6 +5,20 @@ paginate = require("./common/helpers")
 numberOfItems = require("./common/constants")
 
 
+router.get("/search", async (req, res) => {
+    const { title, date } = req.query;
+    if (!title) return res.status(201).send();
+    try {
+        let result = await Movies.find({ title });
+        if (!date) return res.status(200).send(result);
+        else if (result.length && result[0].released == date)
+            return res.status(200).send(result);
+        return res.status(200).send([]);
+    } catch (error) {
+        res.json({ message: error });
+    };
+});
+
 router.get("/:pageNumber", async (req, res) => {
     try {
         const movies = await Movie.find();
@@ -27,20 +41,6 @@ router.post("/", async (req, res) => {
     try {
         await newMovie.save();
         res.status(200).send("New movie successfully registered!");
-    } catch (error) {
-        res.json({ message: error });
-    };
-});
-
-router.get("/search", async (req, res) => {
-    const { title, date } = req.query;
-    if (!title) return res.status(201).send();
-    try {
-        let result = await Movies.find({ title });
-        if (!date) return res.status(200).send(result);
-        else if (result.length && result[0].released == date)
-            return res.status(200).send(result);
-        else return res.status(200).send([]);
     } catch (error) {
         res.json({ message: error });
     };
