@@ -2,7 +2,6 @@ const express = require("express");
 router = express.Router();
 Movie = require('../models/movies');
 paginate = require("./common/helpers").paginate;
-numberOfItems = require("./common/constants");
 
 
 router.get("/search", async (req, res) => {
@@ -20,10 +19,12 @@ router.get("/search", async (req, res) => {
     };
 });
 
-router.get("/:pageNumber", async (req, res) => {
+router.get("/", async (req, res) => {
+    const { pageNumber, itemsNumber } = req.query
     try {
         const movies = await Movie.find();
-        const responce = paginate(movies, numberOfItems, req.params.pageNumber)
+        const result = helpers.shuffle(movies);
+        const responce = paginate(result, itemsNumber, pageNumber);
         res.status(200).send({ content: responce, itemsNumber: movies.length });
     } catch (error) {
         res.json({ message: error });

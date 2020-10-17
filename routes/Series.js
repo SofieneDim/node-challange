@@ -20,10 +20,12 @@ router.get("/search", async (req, res) => {
     };
 });
 
-router.get("/:pageNumber", async (req, res) => {
+router.get("/", async (req, res) => {
+    const { pageNumber, itemsNumber } = req.query
     try {
         const series = await Series.find();
-        const responce = paginate(series, numberOfItems, req.params.pageNumber)
+        const result = helpers.shuffle(series);
+        const responce = paginate(result, itemsNumber, pageNumber);
         res.status(200).send({ content: responce, itemsNumber: series.length })
     } catch (error) {
         res.json({ message: error });
