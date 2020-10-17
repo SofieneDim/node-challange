@@ -12,10 +12,11 @@ router.get("/search", async (req, res) => {
     let moviesResult = [];
     let result = [];
     if (!title) return res.status(201).send();
-    var regex = new RegExp(["^", title, "$"].join(""), "i");
+    var regexSeries = new RegExp(["^", title, "$"].join(""), "i");
+    var regexMovies = new RegExp(["^", title, "$"].join(""), "i");
     try {
-        seriesResult = await Series.find({ title: regex });
-        moviesResult = await Movies.find({ title });
+        seriesResult = await Series.find({ title: regexSeries });
+        moviesResult = await Movies.find({ title: regexMovies });
         if (!date) {
             result = seriesResult.concat(moviesResult);
             return res.status(200).send(result);
