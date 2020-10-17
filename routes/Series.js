@@ -8,8 +8,9 @@ numberOfItems = require("./common/constants");
 router.get("/search", async (req, res) => {
     const { title, date } = req.query;
     if (!title) return res.status(201).send();
+    var regex = new RegExp(["^", title, "$"].join(""), "i");
     try {
-        let result = await Series.find({ title });
+        let result = await Series.find({ title: regex });
         if (!date) return res.status(200).send(result);
         else if (result.length && result[0].released == date)
             return res.status(200).send(result);
