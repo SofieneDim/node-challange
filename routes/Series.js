@@ -1,7 +1,7 @@
 const express = require("express");
 router = express.Router();
 Series = require('../models/series');
-paginate = require("./common/helpers");
+paginate = require("./common/helpers").paginate;
 numberOfItems = require("./common/constants");
 
 

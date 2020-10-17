@@ -1,8 +1,8 @@
 const express = require("express");
 router = express.Router();
 Movie = require('../models/movies');
-paginate = require("./common/helpers")
-numberOfItems = require("./common/constants")
+paginate = require("./common/helpers").paginate;
+numberOfItems = require("./common/constants");
 
 
 router.get("/search", async (req, res) => {
