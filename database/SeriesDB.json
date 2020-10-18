@@ -1,0 +1,243 @@
+[{
+  "_id": {
+    "$oid": "5f8c9e55ea55d3284e4b2b3c"
+  },
+  "rating": 56,
+  "image": "https://mycima.io/wp-content/uploads/2020/03/MV5BMzY3NGI0MWUtYTBmZC00MDEyLTgyMjItZTY5YzIzZjcxNGQ4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY1200--347x520.jpg",
+  "title": "Amazing Stories",
+  "writer": "Atlanta, Georgia, USA",
+  "released": "2017",
+  "description": "Unglaubliche Geschichten (Germany) | Cuentos asombrosos (Spain) | Untitled Amazing Stories Revival | Úžasné príbehy (Slovakia) | Удивительные истории (Russia)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8c9e8aea55d3284e4b2b3d"
+  },
+  "rating": 72,
+  "image": "https://mycima.io/wp-content/uploads/2020/03/MV5BYTljYTYwYTktNjhjMC00MmQxLWJjODktYjIzYTViYWZhZTE4XkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_UY1200--370x493.jpg",
+  "title": "Bloodride",
+  "writer": "Shedding blood",
+  "released": "2011",
+  "description": "Blodtur (Norway) | Blutiger Trip (Germany) | Viaje sangriento (Spain) | Кровавая поездка (Russia) | Coletivo Terror (Brazil)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8c9eb2ea55d3284e4b2b3e"
+  },
+  "rating": 54,
+  "image": "https://mycima.io/wp-content/uploads/2020/03/MV5BNjFiMTYwNGYtZWUxZS00MjAzLTg2NzctNTc1NTI2MTRhYzc0XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UY1200--370x463.jpg",
+  "title": "Devs",
+  "writer": "Тайна разработка",
+  "released": "2019",
+  "description": "Blodtur (Norway) | Blutiger Trip (Germany) | Viaje sangriento (Spain) | Кровавая поездка (Russia) | Coletivo Terror (Brazil)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8c9ed4ea55d3284e4b2b3f"
+  },
+  "rating": 35,
+  "image": "https://mycima.io/wp-content/uploads/2020/01/ENTdQ2JWkAAmQ7B-e1579499479608-370x458.jpg",
+  "title": "9-1-1: Lone Star",
+  "writer": "Brad Falchuk",
+  "released": "2001",
+  "description": "Blodtur (Norway) | Blutiger Trip (Germany) | Viaje sangriento (Spain) | Кровавая поездка (Russia) | Coletivo Terror (Brazil)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8c9f00ea55d3284e4b2b40"
+  },
+  "rating": 85,
+  "image": "https://mycima.io/wp-content/uploads/2020/01/The-Outsider-S01-349x520.jpg",
+  "title": "The Outsider",
+  "writer": "From outside",
+  "released": "2006",
+  "description": "Blodtur (Norway) | Blutiger Trip (Germany) | Viaje sangriento (Spain) | Кровавая поездка (Russia) | Coletivo Terror (Brazil)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8c9f2aea55d3284e4b2b41"
+  },
+  "rating": 74,
+  "image": "https://mycima.io/wp-content/uploads/2020/01/MV5BZmQwZWRkNzUtZTE3NC00ZTQ3LTk0OTUtYzg1NTg4YzlkOWE3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@--352x520.jpg",
+  "title": "Avenue 5\n",
+  "writer": "Авеню 5 (Ukraine)",
+  "released": "2016",
+  "description": "Blodtur (Norway) | Blutiger Trip (Germany) | Viaje sangriento (Spain) | Кровавая поездка (Russia) | Coletivo Terror (Brazil)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8c9f78ea55d3284e4b2b42"
+  },
+  "rating": 96,
+  "image": "https://mycima.io/wp-content/uploads/2020/01/MV5BYTJmMTk4NTgtMTJkMS00NGQ4LWEwMzEtYjZkMjUyN2YzN2E0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@--351x520.jpg",
+  "title": "Lincoln Rhyme",
+  "writer": "Авеню 5 (Ukraine)",
+  "released": "1995",
+  "description": "The Bone Collector (United States) | Lincoln Rhyme: Cazando al coleccionista de huesos (Spain) | Lincoln Rhyme: Caça ao Coleccionador de Ossos (Portugal) | Лінкольн Райм: Полювання на колекціонера кісток (Ukraine) | Lincoln",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8c9f9eea55d3284e4b2b43"
+  },
+  "rating": 51,
+  "image": "https://mycima.io/wp-content/uploads/2020/01/MV5BODZhZjcyOTQtN2Y5OC00M2Q1LTg3MzEtYmE0NTVkNWRmNzc1XkEyXkFqcGdeQXVyMDA4NzMyOA@@--347x520.jpg",
+  "title": "The Dead Lands\n",
+  "writer": "Dead lands",
+  "released": "2008",
+  "description": "The Bone Collector (United States) | Lincoln Rhyme: Cazando al coleccionista de huesos (Spain) | Lincoln Rhyme: Caça ao Coleccionador de Ossos (Portugal) | Лінкольн Райм: Полювання на колекціонера кісток (Ukraine) | Lincoln",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8c9fc4ea55d3284e4b2b44"
+  },
+  "rating": 47,
+  "image": "https://mycima.io/wp-content/uploads/2020/03/5e68a96054b41-370x520.jpg",
+  "title": "Dirty Money\n",
+  "writer": "United States",
+  "released": "2013",
+  "description": "Netflix Original series documents multiple stories about exposing greed, corruption and the spread of crime across the global economy.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8c9feaea55d3284e4b2b45"
+  },
+  "rating": 38,
+  "image": "https://mycima.io/wp-content/uploads/2020/01/MV5BMmQ3YjBiNTYtMWM5ZC00NWQxLWI1ZGMtMDM4YjIzMTMxNTI2XkEyXkFqcGdeQXVyMzQ2MDI5NjU@--351x520.jpg",
+  "title": "Deputy",
+  "writer": "Cedar Park",
+  "released": "2020",
+  "description": "The Los Angeles County Sheriff's Department is one of the largest police forces in the world, but when the sheriff-elect dies, a mysterious rule in the county charter, formed in the Wild West, suddenly pushes the most likely man into action.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca02cea55d3284e4b2b46"
+  },
+  "rating": 80,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/MV5BZmUxNmRmNzctNGIzNS00NDI0LTkwZTktMjcwMjNkYmNiNjllXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY1200--351x520.jpg",
+  "title": "Desenfr",
+  "writer": "Caponeto",
+  "released": "2014",
+  "description": "The Los Angeles County Sheriff's Department is one of the largest police forces in the world, but when the sheriff-elect dies, a mysterious rule in the county charter, formed in the Wild West, suddenly pushes the most likely man into action.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca050ea55d3284e4b2b47"
+  },
+  "rating": 24,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/MV5BNjFmYzAzYTgtY2U5My00NWMzLWExODctNGM4YjA1ZTMyZjgzXkEyXkFqcGdeQXVyNDk3ODk4OQ@@._V1_UY1200--370x518.jpg",
+  "title": "Queen Sono",
+  "writer": "Diprente Films",
+  "released": "2015",
+  "description": "Queen Sonu is an adult orphan who finds her goal in working with a spy agency dedicated to protecting the entire African continent.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca076ea55d3284e4b2b48"
+  },
+  "rating": 65,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/MV5BMzhhM2IwYTAtZWQ4MS00NWE0LWI3NjMtZWIwNWI4YjFmZWFjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY1200--351x520.jpg",
+  "title": "Followers",
+  "writer": "Seguidores",
+  "released": "2017",
+  "description": "Robots in every corner of the world join social networks and give their time and privacy away in the name of connectedness.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca098ea55d3284e4b2b49"
+  },
+  "rating": 45,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/MV5BODFmMWQ5ZGQtYWMwMy00MmVlLWE5MmItODQ4MWUxZGI5ZjcwXkEyXkFqcGdeQXVyNDk3ODk4OQ@@._V1_UY1200--347x520.jpg",
+  "title": "I Am Not Okay",
+  "writer": "Laps Entertainment",
+  "released": "2012",
+  "description": "Esta mierda me supera (Spain) | Мне это не нравится (Russia) | Esta mierda me supera (Argentina) | 這樣 不 OK (Taiwan) | Ez így nem OK (Hungary)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca0b6ea55d3284e4b2b4a"
+  },
+  "rating": 52,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/MV5BM2MwODIyMzYtYWI4Zi00ZmNjLWE4MGEtN2NkNzI1MDhiNzVmXkEyXkFqcGdeQXVyMTM1NjgyNDI@._V1_UY1200_CR90,0,630,1200_AL_--273x520.jpg",
+  "title": "Gentefied",
+  "writer": "lovable",
+  "released": "2015",
+  "description": "Based on the digital series of the same title, Gentefied focuses on three relatives who band together to keep their grandfather's famous Boyle Heights taco shop in action as the neighborhood becomes more focused.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca0d2ea55d3284e4b2b4b"
+  },
+  "rating": 41,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/MV5BZWEwZTcyNjctMjAzZC00ZGU0LWIxYWQtMDAwMmU1NzQ1ZjQ3XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY1200_CR91,0,630,1200_AL_--273x520.jpg",
+  "title": "Hunters",
+  "writer": "Big Indie",
+  "released": "2018",
+  "description": "Based on the digital series of the same title, Gentefied focuses on three relatives who band together to keep their grandfather's famous Boyle Heights taco shop in action as the neighborhood becomes more focused.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca116ea55d3284e4b2b4c"
+  },
+  "rating": 50,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/MV5BNGZjMGM3ZjktZmIxNC00MmVkLWFmOTMtYmFjNmZhNmEzZjUxXkEyXkFqcGdeQXVyMTAyNjg4NjE0._V1_UY1200_CR85,0,630,1200_AL_--273x520.jpg",
+  "title": "High Fidelity\n",
+  "writer": "Midnight Radio",
+  "released": "2012",
+  "description": "Based on the digital series of the same title, Gentefied focuses on three relatives who band together to keep their grandfather's famous Boyle Heights taco shop in action as the neighborhood becomes more focused.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca14eea55d3284e4b2b4d"
+  },
+  "rating": 32,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/MV5BYTU1NjRhODItZjQ4Ni00M2ZiLTkxN2YtZGMxZTI2NjA0M2Y0XkEyXkFqcGdeQXVyNDM1MTM4Njc@._V1_UY1200_CR112,0,630,1200_AL_--273x520.jpg",
+  "title": "Utopia Falls\n",
+  "writer": "Hamilton",
+  "released": "1998",
+  "description": "In a bending type film, a group of teenagers in a faraway colony from an ancient archive that is forbidden from historical, cultural and musical monuments reveal a future story.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca17aea55d3284e4b2b4e"
+  },
+  "rating": 58,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/MV5BY2U4ZGFlYTEtMzc1NS00ZmY2LWE3YTYtMTc4MzQ2NzhiYmM1XkEyXkFqcGdeQXVyNTk1NDI5NTk@._V1_UY1200_CR111,0,630,1200_AL_--273x520.jpg",
+  "title": "Baghdad Central\n",
+  "writer": "Euston Films",
+  "released": "1982",
+  "description": "In a bending type film, a group of teenagers in a faraway colony from an ancient archive that is forbidden from historical, cultural and musical monuments reveal a future story.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca19bea55d3284e4b2b4f"
+  },
+  "rating": 12,
+  "image": "https://mycima.io/wp-content/uploads/2020/01/p16945475_b_v8_ac_f88623867f0b60a8a8487b6218eb976b11539c9f-347x520.jpg",
+  "title": "FBI: Most Wanted\n",
+  "writer": "CBS Television",
+  "released": "1996",
+  "description": "In a bending type film, a group of teenagers in a faraway colony from an ancient archive that is forbidden from historical, cultural and musical monuments reveal a future story.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca1bcea55d3284e4b2b50"
+  },
+  "rating": 57,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/For-Life-370x493.jpg",
+  "title": "For Life\n",
+  "writer": "Channel Road",
+  "released": "1990",
+  "description": "Doug Robinson ProductionsChannel Road ProductionsG UnitABC StudiosSony Pictures Television Studios",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ca1d8ea55d3284e4b2b51"
+  },
+  "rating": 85,
+  "image": "https://mycima.io/wp-content/uploads/2020/02/MV5BOGUwNTMyOTAtMjA0ZS00MjViLWJlMGQtYTZhZTcxOGVkODQ0XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY1200_CR92,0,630,1200_AL_--273x520.jpg",
+  "title": "The Pale Horse\n",
+  "writer": "Agatha Christie",
+  "released": "2000",
+  "description": "Doug Robinson ProductionsChannel Road ProductionsG UnitABC StudiosSony Pictures Television Studios",
+  "__v": 0
+}]
